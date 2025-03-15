@@ -1,18 +1,30 @@
 import React from "react";
+import "../styles/education.scss";
+import logohaui from "../assets/logohaui.jpg";
 
-const About = () => {
+const Education = () => {
   return (
-    <div className="about">
-      <h2>About Me</h2>
-      <div className="section">
-        <p>Hello, I’m <strong>Trinh Minh Hoang</strong>, a passionate Fullstack Developer.</p>
-        <p>
-          I specialize in building scalable web applications with clean and efficient code.  
-          Currently seeking an internship to enhance my technical skills and gain real-world experience.
+    <div className="education-container">
+      <h2 className="education-title">My Education</h2>
+
+      <div className="education-item">
+        <div className="education-header">
+          <img 
+            src={logohaui} 
+            alt="HAUI Logo" 
+            className="education-logo" 
+          />
+          <div className="education-info">
+            <p className="institution">Trường Đại học Công nghiệp Hà Nội (HAUI)</p>
+            <p className="date">2021 - Now</p>
+          </div>
+        </div>
+        <p className="description">
+          Currently in the 4th year, studying at the Faculty of Information Technology.
         </p>
       </div>
     </div>
   );
 };
 
-export default About;
+export default Education;

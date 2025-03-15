@@ -13,6 +13,7 @@ const SocialLinks = () => {
       <a href="https://www.facebook.com/mhoag.10/" target="_blank" rel="noopener noreferrer">
         <FaFacebook />
       </a>
+
     </div>
   );
 };

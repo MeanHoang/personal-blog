@@ -7,15 +7,15 @@ import SocialLinks from "./SocialLinks.js";
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      {/* Avatar */}
+
       <div className="avatar">
         <img src={avatar} alt="Avatar" />
       </div>
 
       <h1 className="name">Trinh Minh Hoang</h1>
-      <h2 className="title">Fullstack Deverloper</h2>
+      <h2 className="title">Fullstack Developer</h2>
       <p className="description">
-        I build accessible, pixel-perfect digital experiences for the web.
+      "I'm a passionate developer focused on building web applications."
       </p>
 
       {/* Navigation Links */}
@@ -29,7 +29,7 @@ const Sidebar = () => {
         <NavLink to="/projects" activeClassName="active">
           <span className="line"></span> PROJECTS
         </NavLink>
-        <NavLink to="/educations" activeClassName="active">
+        <NavLink to="/education" activeClassName="active">
           <span className="line"></span> EDUCATIONS
         </NavLink>
       </nav>

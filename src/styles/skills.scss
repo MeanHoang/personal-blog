@@ -1,16 +1,87 @@
 .skills-container {
   padding: 20px;
-  background: linear-gradient(135deg, #0b1c39, #1a2a6c);
-  color: white;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 30px auto;
+  flex-grow: 1;
+}
+
+.skills-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+}
+
+.skill {
+  background-color: #fff;
   border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
 
-  ul {
-      list-style: none;
-      padding: 0;
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
 
-      li {
-          padding: 10px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      }
+.skill-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #333; 
+}
+
+.skill .fa-react {
+  color: #61dafb;
+}
+
+.skill .fa-node-js {
+  color: #8cc84b;
+}
+
+.skill .fa-java {
+  color: #007396; 
+}
+
+.skill .fa-database {
+  color: #f29111; 
+}
+
+.skill .fa-code {
+  color: #4c4c4c;
+}
+
+.skill .fa-git {
+  color: #f34f29; 
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 1024px) {
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-list {
+    grid-template-columns: 1fr;
   }
 }

@@ -1,17 +1,81 @@
 .education-container {
-  background-color: white;
-  padding: 20px;
-  border: 2px solid #0b1c39;
-  border-radius: 8px;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.education-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
   text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
-  h1 {
-      color: #0b1c39;
+.education-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.education-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.education-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.education-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.degree {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.institution {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 1rem;
+  color: #888;
+}
+
+.description {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .education-container {
+    padding: 20px;
   }
+}
 
-  .school {
-      font-weight: bold;
-      font-size: 18px;
-      margin-top: 10px;
+@media (max-width: 768px) {
+  .education-container {
+    padding: 15px;
+  }
+  .education-item {
+    padding: 20px;
   }
 }

@@ -5,13 +5,11 @@
 @import "education";
 @import "projects";
 
-
 .container {
     display: flex;
     height: 100vh; 
+    overflow: hidden; 
 }
-
-
 
 .main-content {
     flex-grow: 1;
@@ -19,5 +17,5 @@
     align-items: center;
     justify-content: center;
     padding: 40px;
-
+    overflow-y: auto;
 }

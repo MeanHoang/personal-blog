@@ -1,33 +1,52 @@
 import React from "react";
+import { FaDatabase, FaCss3Alt, FaNodeJs, FaReact, FaJava, FaNetworkWired } from "react-icons/fa";
+import "../styles/projects.scss";
 
 const Projects = () => {
   const projects = [
     {
-      title: "WahnShop - E-commerce Website",
-      techStack: "Express.js, React.js, MySQL",
-      description: "A full-stack e-commerce platform with authentication, product management, and an admin dashboard.",
-      links: [
-        { label: "View Backend", url: "https://github.com/MeanHoang/be-wahnshop" },
-        { label: "View Admin Panel", url: "https://github.com/MeanHoang/fe-admin" }
-      ]
+      title: "WahnShop - E-commerce Backend",
+      techStack: ["Express.js", "MySQL", "RestAPI"],
+      description: "This project is a fully functional backend for an e-commerce platform built with Node.js and Express. It implements a RESTful API for handling product, user, and order management. JWT (JSON Web Token) is used for secure authentication and user management. The backend also integrates with Cloud storage for image handling and Multer for file uploads, ensuring a smooth and scalable experience for handling media files.",
+      link: "https://github.com/MeanHoang/be-wahnshop",
+    },
+    {
+      title: "WahnShop - E-commerce Admin Frontend",
+      techStack: ["React.js", "Bootstrap"],
+      description: "The Admin Panel for the WahnShop E-commerce platform is developed using React.js and Bootstrap. This project allows admins to efficiently manage the entire store, including product listings, user accounts, categories, and attributes. The admin interface is designed to be user-friendly, ensuring smooth interactions when managing the platform's data, with features like login authentication, CRUD operations for products, and managing users.",
+      link: "https://github.com/MeanHoang/fe-admin",
+    },
+    {
+      title: "WahnShop - E-commerce WebShop Frontend",
+      techStack: ["React.js", "Bootstrap"],
+      description: "This project is the frontend of the WahnShop e-commerce website, built with React.js and Bootstrap. It is designed to provide a seamless shopping experience, including user login, product browsing, shopping cart functionality, and checkout. The frontend communicates with the backend API for real-time data fetching, ensuring the most up-to-date product and order information. The use of MySQL ensures efficient data storage and retrieval for product listings and user management.",
+      link: "https://github.com/MeanHoang/fe-webshop",
     },
     {
       title: "BookingCare - Online Medical Booking",
-      techStack: "Spring Boot, Bootstrap, MySQL",
-      description: "Led a team of 3 to develop a booking platform for medical consultations.",
-      links: [
-        { label: "View Project", url: "https://github.com/MeanHoang/bookingcare" }
-      ]
+      techStack: ["Spring Boot", "Bootstrap", "MySQL"],
+      description: "BookingCare is an online medical booking platform built using Spring Boot. The project follows a standard MVC architecture to ensure separation of concerns and scalability. It serves three main roles: Admins (who manage doctors, clinics, and user registrations), Doctors (who manage their appointment schedules, patient bookings, and automated email reminders), and Users (who can search for doctors and schedule appointments). The system also integrates with MySQL for database management and JDBC for database connection, ensuring secure and efficient data handling.",
+      link: "https://github.com/MeanHoang/bookingcare",
     },
-    {
-      title: "WahnStore - E-commerce Website",
-      techStack: "C# ASP.NET, Bootstrap, SQL Server",
-      description: "A team project where I worked on database design and full-stack development.",
-      links: [
-        { label: "View Project", url: "https://github.com/MeanHoang/WahnStore_GROUP13" }
-      ]
-    }
   ];
+
+  const renderTechIcons = (techStack) => {
+    const techIcons = {
+      "React.js": <FaReact />,
+      "Express.js": <FaNodeJs />,
+      "MySQL": <FaDatabase />,
+      "Spring Boot": <FaJava />,
+      "Bootstrap": <FaCss3Alt />,
+      "RestAPI": <FaNetworkWired />
+    };
+
+    return techStack.map((tech, index) => (
+      <div key={index} className="tech-icon">
+        {techIcons[tech] && <span className="icon">{techIcons[tech]}</span>}
+        <span className="tech-name">{tech}</span>
+      </div>
+    ));
+  };
 
   return (
     <div className="projects">
@@ -35,14 +54,13 @@ const Projects = () => {
       <div className="project-list">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
-            <h3>{project.title}</h3>
-            <p><strong>Tech Stack:</strong> {project.techStack}</p>
-            <p>{project.description}</p>
-            <div className="project-links">
-              {project.links.map((link, idx) => (
-                <a key={idx} href={link.url} target="_blank" rel="noopener noreferrer">{link.label}</a>
-              ))}
-            </div>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="tech-stack">
+                {renderTechIcons(project.techStack)}
+              </div>
+            </a>
           </div>
         ))}
       </div>
