@@ -20,6 +20,21 @@ const About = () => {
         with <strong>Bootstrap and SCSS</strong>. I also ensure efficient state management using <strong>React Hooks and Redux</strong>.
         Lately, I have been learning <strong>Next.js</strong> and experimenting with modern styling libraries like <strong>TailwindCSS</strong>.
       </p>
+
+      <div class="contact-container">
+  <div class="contact-info">
+    <div class="contact-item">
+      <p>Phone: 0399 991 384</p>
+    </div>
+    <div class="contact-item">
+      <p>Email: viethoangxtpro08@gamil.com</p>
+    </div>
+    <div class="contact-item">
+      <p>Facebook: <a href="https://www.facebook.com/mhoag.10">Việt Hoàng</a></p>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };

@@ -1,11 +1,18 @@
+/* Sidebar */
 .sidebar {
+  position: fixed;  /* Sidebar sẽ cố định bên trái */
+  top: 0;
+  left: 0;
+  width: 450px;  /* Chiều rộng của sidebar */
   background-color: #0a192f;
   color: white;
-  height: 100vh;
+  height: 100vh;  /* Chiều cao sidebar chiếm toàn bộ chiều cao màn hình */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  z-index: 1000;  /* Đảm bảo sidebar luôn hiển thị trên cùng */
+  transition: width 0.3s ease;
 
   .avatar {
     width: 120px;
@@ -97,20 +104,36 @@
     }
   }
 
+  /* Responsive styles */
   @media (max-width: 768px) {
-    height: auto;
+    position: relative; /* Sidebar không còn cố định khi màn hình nhỏ */
+    width: 100%;  /* Chiều rộng bằng màn hình khi nhỏ */
+    height: auto;  /* Chiều cao tự động */
     padding: 1rem;
+
     .name {
       font-size: 1.5rem;
     }
+
     .title {
       font-size: 1rem;
     }
+
     .description {
       font-size: 0.9rem;
     }
+
     .nav-links a {
       font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;  /* Sidebar chiếm 100% chiều rộng khi màn hình nhỏ */
+    height: auto;
+    padding: 0.5rem;
+    .name, .title, .description {
+      display: none;  /* Ẩn tên và mô tả trên điện thoại */
     }
   }
 }
