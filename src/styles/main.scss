@@ -1,0 +1,23 @@
+@import "variables";
+@import "sidebar";
+@import "about";
+@import "skills";
+@import "education";
+@import "projects";
+
+
+.container {
+    display: flex;
+    height: 100vh; 
+}
+
+
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+
+}

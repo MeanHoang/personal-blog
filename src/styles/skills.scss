@@ -1,0 +1,16 @@
+.skills-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #0b1c39, #1a2a6c);
+  color: white;
+  border-radius: 8px;
+
+  ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+          padding: 10px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+  }
+}
