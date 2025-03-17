@@ -27,7 +27,7 @@ const About = () => {
       <p>Phone: 0399 991 384</p>
     </div>
     <div class="contact-item">
-      <p>Email: viethoangxtpro08@gamil.com</p>
+      <p>Email: hoangtm.dev@gmail.com</p>
     </div>
     <div class="contact-item">
       <p>Facebook: <a href="https://www.facebook.com/mhoag.10">Việt Hoàng</a></p>
