@@ -30,8 +30,9 @@ const About = () => {
       <p>Email: hoangtm.dev@gmail.com</p>
     </div>
     <div class="contact-item">
-      <p>Facebook: <a href="https://www.facebook.com/mhoag.10">Việt Hoàng</a></p>
-    </div>
+  <p>Facebook: <a href="https://www.facebook.com/mhoag.10" target="_blank" rel="noopener noreferrer">Viet Hoang</a></p>
+</div>
+
   </div>
 </div>
 

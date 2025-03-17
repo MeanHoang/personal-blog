@@ -8,13 +8,13 @@
 
   .main-content {
     flex-grow: 1;
-    margin-left: 450px;  
+    margin-left: 480px;  
     padding: 40px;
     overflow-y: auto;
     transition: margin-left 0.3s ease;
   
     @media (max-width: 768px) {
-      margin-left: 0;  /* Điều chỉnh khi màn hình nhỏ, không còn sidebar bên trái */
+      margin-left: 0;  
       padding: 20px;
     }
   
