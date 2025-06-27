@@ -1,28 +1,34 @@
 import React from "react";
 import "../styles/education.scss";
+import educationData from "../const/Education.json";
+
 import logohaui from "../assets/logohaui.jpg";
+
+const logoMap = {
+  "logohaui.jpg": logohaui,
+};
 
 const Education = () => {
   return (
     <div className="education-container">
       <h2 className="education-title">My Education</h2>
 
-      <div className="education-item">
-        <div className="education-header">
-          <img 
-            src={logohaui} 
-            alt="HAUI Logo" 
-            className="education-logo" 
-          />
-          <div className="education-info">
-            <p className="institution">Trường Đại học Công nghiệp Hà Nội (HAUI)</p>
-            <p className="date">2021 - Now</p>
+      {educationData.map((edu, index) => (
+        <div key={index} className="education-item">
+          <div className="education-header">
+            <img
+              src={logoMap[edu.logo]}
+              alt={`${edu.institution} Logo`}
+              className="education-logo"
+            />
+            <div className="education-info">
+              <p className="institution">{edu.institution}</p>
+              <p className="date">{edu.date}</p>
+            </div>
           </div>
+          <p className="description">{edu.description}</p>
         </div>
-        <p className="description">
-          Currently in the 4th year, studying at the Faculty of Information Technology.
-        </p>
-      </div>
+      ))}
     </div>
   );
 };

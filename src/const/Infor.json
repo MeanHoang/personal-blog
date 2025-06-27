@@ -1,0 +1,17 @@
+{
+  "name": "Trinh Minh Hoang",
+  "title": "Fullstack Developer",
+  "description": "\"I'm a passionate developer focused on building web applications.\"",
+  "avatar": "avatar.png",
+  "phone": "0399 991 384",
+  "email": "hoangtm.dev@gmail.com",
+  "facebook": {
+    "name": "Viet Hoang",
+    "url": "https://www.facebook.com/mhoag.10"
+  },
+  "bio": [
+    "Hello! I'm Trinh Minh Hoang, a passionate Fullstack Developer who enjoys building <strong>scalable</strong>, <strong>efficient</strong>, and <strong>user-friendly</strong> web applications. I always strive to write <strong>clean code</strong> and develop solutions that are both maintainable and high-performing.",
+    "I specialize in <strong>backend development</strong>, using <strong>Node.js with Express.js</strong> and <strong>Java Spring</strong> to build <strong>RESTful APIs</strong>. I have experience working with technologies like <strong>JWT</strong>, <strong>Cloud</strong>, <strong>Nodemailer</strong>, and <strong>Passport</strong>. Recently, I have been exploring <strong>TypeScript</strong> and <strong>NestJS</strong> to enhance my backend expertise.",
+    "On the frontend side, I create interactive user interfaces using <strong>React.js</strong> and improve UI/UX with <strong>Bootstrap</strong> and <strong>SCSS</strong>. I also ensure efficient state management using <strong>React Hooks</strong> and <strong>Redux</strong>. Lately, I have been learning <strong>Next.js</strong> and experimenting with modern styling libraries like <strong>TailwindCSS</strong>."
+  ]
+}

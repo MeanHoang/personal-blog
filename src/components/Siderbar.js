@@ -1,24 +1,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/sidebar.scss";
-import avatar from "../assets/avatar.png";
-import SocialLinks from "./SocialLinks.js";
+import avatarImg from "../assets/avatar.png";
+import infor from "../const/Infor.json";
+import SocialLinks from "./SocialLinks";
 
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-
       <div className="avatar">
-        <img src={avatar} alt="Avatar" />
+        <img src={avatarImg} alt="Avatar" />
       </div>
 
-      <h1 className="name">Trinh Minh Hoang</h1>
-      <h2 className="title">Fullstack Developer</h2>
-      <p className="description">
-      "I'm a passionate developer focused on building web applications."
-      </p>
+      <h1 className="name">{infor.name}</h1>
+      <h2 className="title">{infor.title}</h2>
+      <p className="description">{infor.description}</p>
 
-      {/* Navigation Links */}
       <nav className="nav-links">
         <NavLink to="/about" activeClassName="active">
           <span className="line"></span> ABOUT
@@ -29,12 +26,12 @@ const Sidebar = () => {
         <NavLink to="/projects" activeClassName="active">
           <span className="line"></span> PROJECTS
         </NavLink>
-        <NavLink to="/education" activeClassName="active">
+        {/* <NavLink to="/education" activeClassName="active">
           <span className="line"></span> EDUCATIONS
-        </NavLink>
+        </NavLink> */}
       </nav>
 
-      <SocialLinks/>
+      <SocialLinks />
     </aside>
   );
 };

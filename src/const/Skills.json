@@ -1,0 +1,32 @@
+[
+  {
+    "category": "Code Languages",
+    "icon": "FaCode",
+    "description": "Experience with <strong>JavaScript</strong>, <strong>Java</strong>, and <strong>TypeScript</strong>."
+  },
+  {
+    "category": "Express.js / Nest.js",
+    "icon": "FaNodeJs",
+    "description": "Backend development with <strong>JWT</strong>,<strong> Axios</strong>, <strong>Passport</strong>, <strong>Nodemailer</strong>, <strong>Cloudinary</strong>, <strong>multer</strong>, and ORM."
+  },
+  {
+    "category": "Spring Boot",
+    "icon": "FaJava",
+    "description": "Building secure applications with <strong>MVC</strong>, <strong>JPA</strong>, <strong>Security</strong>, and <strong>JWT</strong>."
+  },
+  {
+    "category": "React.js",
+    "icon": "FaReact",
+    "description": "Frontend development with <strong>React Hooks</strong>, <strong>Redux</strong>, <strong>Bootstrap</strong>, and state management."
+  },
+  {
+    "category": "Databases",
+    "icon": "FaDatabase",
+    "description": "Experienced with <strong>SQL</strong> and <strong>NoSQL</strong> (e.g., <strong>MongoDB</strong>, <strong>Firebase Firestore</strong>) for structured and unstructured data."
+  },
+  {
+    "category": "Cloud & Firebase Services",
+    "icon": "FaServer",
+    "description": "Working with <strong>Firebase Functions</strong>, <strong>Firestore</strong>,<strong>Pub/Sub</strong> for scalable cloud solutions."
+  }
+]

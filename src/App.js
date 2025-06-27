@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Education from "./pages/Education";
 import Projects from "./pages/Projects";
-import './styles/main.scss';
+import "./styles/main.scss";
 
 function App() {
   return (
@@ -17,10 +17,10 @@ function App() {
 
         <div className="col-lg-8 col-md-8 col-sm-12 main-content">
           <Routes>
-          <Route path="/" element={<About />} />
+            <Route path="/" element={<About />} />
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
-            <Route path="/education" element={<Education />} />
+            {/* <Route path="/education" element={<Education />} /> */}
             <Route path="/projects" element={<Projects />} />
           </Routes>
         </div>
